@@ -1,0 +1,2428 @@
+﻿body {
+    direction: rtl;
+    font-family: 'Rubik', sans-serif;
+    font-size: medium;
+    background-color: #16120f;
+}
+
+#container {
+    width: 1366px;
+    margin: 0 auto;
+    height: 100vh;
+}
+
+.is-visible {
+    display: block;
+}
+
+.is-open {
+    opacity: 1;
+}
+/***********Main Menu************/
+/*Main bar with logo and nav*/
+header {
+    width: 366px;
+    height: 100%;
+    background-color: #1d1917;
+    float: right;
+    position: relative;
+}
+
+.ENDANGER_logo {
+    padding-right: 7px;
+    margin-top: 25px;
+}
+
+#main-banner {
+    color: white;
+    margin: 30px 11px 20px;
+    font-size: 28px;
+    width: 300px;
+}
+
+.inBnrEnlarge {
+    font-size: 35px;
+}
+/*Main navigator Bar*/
+.main-nav {
+    width: 150px;
+    margin-top: 30px;
+    margin-right: 11px;
+}
+
+    .main-nav a {
+        display: inline-block;
+        text-decoration: none;
+        color: white;
+        padding: 5px 5px 5px;
+        text-align: center;
+    }
+
+
+
+    .main-nav li {
+        list-style: none;
+        width: 165px;
+    }
+
+
+
+.disabledLink {
+    cursor: not-allowed;
+}
+/*The menu is open for indication of current page*/
+.activeMenua, .activeMenub, .activeMenuc {
+    display: block;
+}
+
+.main-nav-ul .onPage ul {
+    display: block;
+}
+
+.onPage .redSlash {
+    color: #ffba08;
+}
+
+.onPage .selected-menu {
+    color: #ffba08;
+}
+
+.onPage .onSub {
+    color: #ffba08;
+}
+
+.onPage .onSlash {
+    display: inline-block;
+}
+
+.onPageFoot, .onPageFoot:visited {
+    color: #ffba08;
+}
+/*active hovers for menu*/
+.main-nav li:hover .redSlash {
+    color: #ffba08;
+}
+
+
+
+.main-nav li:hover .selected-menu {
+    color: #ffba08;
+}
+
+.main-nav a:hover {
+    color: #ffba08;
+}
+
+
+.main-nav-ul ul {
+    display: none;
+    padding-right: 20px;
+    transition: all .3s linear;
+}
+
+.main-nav-ul li li:hover .markerSlash {
+    display: inline;
+}
+
+.main-nav-ul li li:hover a {
+    color: #ffba08;
+}
+
+.markerSlash {
+    color: #ffba08;
+    display: none;
+}
+/*footer*/
+.footer-nav {
+    width: 366px;
+    height: 3.5%;
+    background-color: #1d1917;
+    position: fixed;
+    bottom: 0;
+    right: inherit;
+}
+
+    .footer-nav ul {
+        position: relative;
+        right: 11px;
+        bottom: 0;
+    }
+
+    .footer-nav a {
+        text-decoration: none;
+        color: white;
+        text-align: center;
+    }
+
+    .footer-nav li {
+        list-style: none;
+        display: inline-block;
+    }
+
+        .footer-nav li:after {
+            content: '//';
+            color: white;
+        }
+
+        .footer-nav li:last-child:before {
+            content: ' ';
+        }
+
+    .footer-nav ul li a:hover {
+        color: #ffba08;
+    }
+
+/*red slashes between footer*/
+.redSlash {
+    color: white;
+}
+
+/***************3 Caurousel****************/
+/*SlideShow*/
+.carousel {
+    display: none;
+    color: white;
+}
+
+/* Slideshow container */
+.carousel-container {
+    width: 1000px;
+    height: 768px;
+    position: relative;
+    margin-right: 366px;
+    background-color: #16120f;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    left: 50%;
+    width: auto;
+    padding: 16px;
+    top: 0;
+    color: white;
+    font-weight: bold;
+    font-size: 22px;
+    transition: 0.6s ease;
+    border-radius: 3px 3px 3px 3px;
+    user-select: none;
+}
+
+.next {
+    margin-top: 714px;
+    border-radius: 3px 3px 3px 3px;
+}
+
+a.next {
+}
+
+.prev:hover, .next:hover {
+    background-color: #ffba08;
+}
+
+/* The dots/bullets/indicators */
+.dots {
+    position: relative;
+    width: 50px;
+    margin-left: 10px;
+    bottom: 689px;
+    float: left;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: block;
+    margin: 30px;
+    background-color: white;
+    transition: background-color 0.6s ease;
+}
+
+    .active, .dot:hover {
+        height: 15px;
+        width: 15px;
+        background-color: #ffba08;
+    }
+
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+/*******home Page******/
+#homeHeader {
+    color: white;
+    font-size: 55px;
+    position: relative;
+    top: 45px;
+}
+
+    #homeHeader:before {
+        content: '//'
+    }
+/***********Inside Carousel**********/
+.homeHeadline {
+    font-size: 30px;
+    position: relative;
+    right: 40px;
+    top: 150px;
+}
+
+    .homeHeadline:before {
+        content: '//';
+    }
+
+#homeFirst {
+    color: white;
+    font-size: 20px;
+    position: relative;
+    top: 60px;
+    right: 40px;
+    width: 365px;
+}
+
+.homeHeadline img {
+    font-size: 40px;
+    position: relative;
+    top: 90px;
+    right: -25px;
+}
+
+.homeTxt1 {
+    font-size: 18px;
+    position: relative;
+    top: 300px;
+    right: 60px;
+    list-style: none;
+    letter-spacing: 1.5px;
+}
+
+.homeTxt2 {
+    font-size: 18px;
+    position: relative;
+    top: 400px;
+    right: 60px;
+    list-style: none;
+    letter-spacing: 1.5px;
+}
+
+.homeImg {
+    position: relative;
+    right: 245px;
+}
+
+
+/*לחצן בעמוד בית*/
+.homeBtn {
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    border: 6px solid #ffba08;
+    border-radius: 25px;
+    font-size: 30px;
+    font-weight: bold;
+    position: relative;
+    /* left: 525px; */
+    bottom: 404px;
+    right: 105px;
+}
+
+    .homeBtn:hover {
+        background: #ffba08;
+    }
+
+
+
+
+
+.homeStamp {
+    position: relative;
+    bottom: 628px;
+    right: 100px;
+}
+
+.invis {
+    visibility: hidden;
+}
+
+/*******************All pages But Home*********************/
+
+.pageContainer {
+    width: 1000px;
+    position: relative;
+    margin-right: 366px;
+    /* height: 85vh; */
+    height: 79vh;
+    background: #16120f;
+    color: white;
+    overflow-x: hidden;
+    direction: ltr;
+}
+
+.turnTxt {
+    direction: rtl;
+    height: 100%;
+}
+
+.pageTop {
+    position: relative;
+    width: 1000px;
+    height: 200px;
+    margin-right: 366px;
+    background-color: #16120f;
+}
+/***********Bread Crumbs************/
+/*mammal bread Crumbs*/
+.breadCrumbsMal {
+    position: absolute;
+    width: 200px;
+    right: 226px;
+    color: #ffba08;
+}
+
+    .breadCrumbsMal ol {
+        list-style: none;
+    }
+
+        .breadCrumbsMal ol li {
+            display: inline-block;
+        }
+
+    .breadCrumbsMal a, .breadCrumbsMal a:visited {
+        text-decoration: none;
+        color: inherit;
+    }
+
+
+/*Volenteering breadCrumbs*/
+.breadCrumbsVol {
+    position: absolute;
+    width: 204px;
+    right: 201px;
+    top: 109px;
+    color: #ffba08;
+}
+
+    .breadCrumbsVol ol {
+        list-style: none;
+    }
+
+        .breadCrumbsVol ol li {
+            display: inline-block;
+        }
+
+    .breadCrumbsVol a, .breadCrumbsVol a:visited {
+        text-decoration: none;
+        color: inherit;
+    }
+/*Lutra BreadCrumbs*/
+.breadCrumbsLtr {
+    position: absolute;
+    width: 204px;
+    right: 236px;
+    top: 109px;
+    color: #ffba08;
+}
+
+    .breadCrumbsLtr ol {
+        list-style: none;
+    }
+
+        .breadCrumbsLtr ol li {
+            display: inline-block;
+        }
+
+    .breadCrumbsLtr a, .breadCrumbsLtr a:visited {
+        text-decoration: none;
+        color: inherit;
+    }
+/*South BreadCrumbs*/
+.breadCrumbsSouth {
+    position: absolute;
+    width: 204px;
+    right: 253px;
+    top: 109px;
+    color: #ffba08;
+}
+
+    .breadCrumbsSouth ol {
+        list-style: none;
+    }
+
+        .breadCrumbsSouth ol li {
+            display: inline-block;
+        }
+
+    .breadCrumbsSouth a, .breadCrumbsSouth a:visited {
+        text-decoration: none;
+        color: inherit;
+    }
+/*********scrollbar*********/
+::-webkit-scrollbar {
+    width: 5px;
+    background: #b2bbc1;
+}
+/* Track */
+::-webkit-scrollbar-track {
+    width: 5px;
+    background-color: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #ffba08;
+    width: 5px;
+    /*b*/
+}
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: #f43101;
+    }
+/****************mammal page******************/
+.mammalHeadline {
+    font-size: 40px;
+    position: relative;
+    top: 100px;
+    color: white;
+}
+
+    .mammalHeadline:before {
+        content: '//';
+    }
+
+#mammalNums1, #mammalNums2, #mammalNums3 {
+    font-size: 35px;
+    color: #b2bbc1;
+}
+
+.numDes1, .numDes2, .numDes3 {
+    font-size: 20px;
+    color: #b2bbc1;
+}
+
+#mammalNums1 {
+    position: relative;
+    margin-top: 65px;
+    margin-right: 150px;
+}
+
+.numDes1 {
+    width: 82px;
+    position: relative;
+    margin-right: 140px;
+    top: 12px;
+}
+
+#mammalNums2 {
+    position: relative;
+    margin-right: 445px;
+    bottom: 75px;
+}
+
+.numDes2 {
+    position: relative;
+    width: 127px;
+    MARGIN-RIGHT: 407PX;
+    BOTTOM: 63PX;
+}
+
+#mammalNums3 {
+    position: relative;
+    margin-right: 750px;
+    bottom: 150px;
+}
+
+.numDes3 {
+    width: 130px;
+    position: relative;
+    margin-right: 712px;
+    bottom: 138px;
+}
+
+#mammalBg {
+    background-image: url(../img/mammalPage/mammalBG.png);
+}
+/*****All mammal list*****/
+.mammalListHead {
+    font-size: 35px;
+}
+
+.mammalList1 li, .mammalList2 li, .mammalList3 li {
+    font-size: 25px;
+    padding: 5px;
+    text-decoration: none;
+}
+
+.mammalList1 {
+    /* margin-top: 20px; */
+    position: relative;
+    top: 13px;
+    left: 25%;
+}
+
+    .mammalList1 h3 {
+        color: lightgray;
+        font-size: 30px;
+        text-decoration: underline;
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+
+    .mammalList1 ul {
+        list-style: none;
+    }
+
+    .mammalList1 li {
+    }
+
+.mammalList2 {
+    position: relative;
+    bottom: 549px;
+}
+
+    .mammalList2 h3 {
+        text-decoration: underline;
+        margin-bottom: 10px;
+        font-weight: bold;
+        font-size: 30px;
+        color: lightgray;
+    }
+
+    .mammalList2 ul {
+        list-style: none;
+    }
+
+    .mammalList2 li {
+    }
+
+.mammalList3 {
+    right: 25%;
+    position: relative;
+    bottom: 1152px;
+}
+
+    .mammalList3 h3 {
+        text-decoration: underline;
+        margin-bottom: 10px;
+        font-weight: bold;
+        font-size: 30px;
+        color: lightgray;
+    }
+
+    .mammalList3 ul {
+        list-style: none;
+    }
+
+.overlay-content a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+.listPushTop {
+    margin-top: 30px;
+}
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 15%;
+    width: 100%;
+    text-align: center;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+    text-decoration: none;
+    color: white;
+}
+
+@media screen and (max-height: 450px) {
+    .overlay a {
+        font-size: 20px
+    }
+
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+/*********mammal Facts***********/
+.mammalFacts {
+    position: relative;
+    bottom: 70px;
+    margin-right: 60px;
+    height: 320px;
+}
+
+.mammalIcon {
+    background-image: url(../img/mammalPage/mammalPaw.png);
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    left: 50px;
+    top: 30px;
+}
+
+.mammalFacts li {
+    list-style: none;
+    padding-right: 40px;
+    width: 480px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/***********Causes For Mammal Extinction**********/
+#mammalCauseContainer {
+    height: 300px;
+}
+
+.mammalCauseHeadline {
+    position: relative;
+    font-size: 25px;
+    margin-right: 50px;
+}
+
+.causesArrow1, .causesArrow2, .causesArrow3, .causesArrow4, .causesArrow5, .causesArrow6 {
+    border-color: #16120f transparent;
+    border-style: solid;
+    border-width: 20px 20px 0px 20px;
+    height: 0px;
+    width: 0px;
+    position: relative;
+}
+
+.cause1, .cause2, .cause3, .cause4, .cause5, .cause6 {
+    background-repeat: no-repeat;
+    width: 83px;
+    height: 120px;
+    position: relative;
+    border: 2px solid #16120f;
+    border-radius: 15px;
+}
+
+    .cause1 #causeTxt1, .cause2 #causeTxt2, .cause3 #causeTxt3, .cause4 #causeTxt4, .cause5 #causeTxt5, .cause6 #causeTxt6 {
+        position: relative;
+        width: 617px;
+        height: 80px;
+        text-align: right;
+        line-height: 25px;
+    }
+
+    .cause1:hover, .cause2:hover, .cause3:hover, .cause4:hover, .cause5:hover, .cause6:hover {
+        border-color: #f43101;
+    }
+
+        .cause1:hover .causesArrow1, .cause2:hover .causesArrow2, .cause3:hover .causesArrow3, .cause4:hover .causesArrow4, .cause5:hover .causesArrow5, .cause6:hover .causesArrow6 {
+            border-color: #f43101 transparent;
+        }
+
+        .cause1:hover #causeTxt1, .cause2:hover #causeTxt2, .cause3:hover #causeTxt3, .cause4:hover #causeTxt4, .cause5:hover #causeTxt5, .cause6:hover #causeTxt6 {
+            display: block;
+        }
+
+.cause1 {
+    background-image: url(../img/RoadconsIcon.png);
+    background-size: 90px;
+    background-position: -2px -4px;
+    position: relative;
+    right: 40px;
+    margin-top: 5px;
+}
+
+    .cause1 p {
+        position: relative;
+        text-align: center;
+        top: 75px;
+    }
+
+.causesArrow1 {
+    top: 90px;
+    right: 20px;
+}
+
+#causeTxt1 {
+    display: none;
+    top: 90px;
+}
+/****cause2****/
+.cause2 {
+    position: relative;
+    background-image: url(../img/PesticideIcon.png);
+    background-size: 60px;
+    background-position: 5px 8px;
+    right: 149px;
+    bottom: 124px;
+}
+
+    .cause2 p {
+        position: relative;
+        text-align: center;
+        top: 78px;
+    }
+
+.causesArrow2 {
+    top: 105px;
+    right: 20px;
+}
+
+#causeTxt2 {
+    display: none;
+    left: 109px;
+    text-align: right;
+    top: 105px;
+}
+/*Hover number 3*/
+.cause3 {
+    background-image: url(../img/CO2Icon.png);
+    background-position: -9px -17px;
+    position: relative;
+    right: 261px;
+    bottom: 248px;
+}
+
+    .cause3 p {
+        position: relative;
+        width: 50px;
+        text-align: center;
+        right: 17px;
+        top: 68px;
+    }
+
+.causesArrow3 {
+    top: 90px;
+    right: 20px;
+}
+
+#causeTxt3 {
+    display: none;
+    right: -220px;
+    top: 90px;
+}
+
+/*Hover number 4*/
+
+
+.cause4 {
+    background-image: url(../img/H2O-PollutionIcon.png);
+    background-position: -9px -12px;
+    position: relative;
+    right: 373px;
+    bottom: 372px;
+}
+
+    .cause4 p {
+        position: relative;
+        text-align: center;
+        top: 73px;
+    }
+
+.causesArrow4 {
+    top: 106px;
+    right: 20px;
+}
+
+#causeTxt4 {
+    display: none;
+    left: 332px;
+    top: 107px;
+}
+/*Hover number 5*/
+.cause5 {
+    background-image: url(../img/HuntIcon.png);
+    background-size: 53px;
+    background-position: 15px 6px;
+    position: relative;
+    right: 476px;
+    bottom: 496px;
+}
+
+    .cause5 p {
+        position: relative;
+        text-align: center;
+        top: 75px;
+    }
+
+.causesArrow5 {
+    top: 105px;
+    right: 20px;
+}
+
+#causeTxt5 {
+    display: none;
+    left: 435px;
+    top: 109px;
+}
+/*Hover number 6*/
+.cause6 {
+    background-image: url(../img/CarCrashIcon.png);
+    background-size: 60px;
+    background-position: 12px 5px;
+    position: relative;
+    right: 575px;
+    bottom: 620px;
+}
+
+    .cause6 p {
+        position: relative;
+        text-align: center;
+        top: 69px;
+    }
+
+.causesArrow6 {
+    top: 90px;
+    right: 20px;
+}
+
+#causeTxt6 {
+    display: none;
+    left: 532px;
+    top: 93px;
+}
+/*******Extincted Carousel*******/
+.carousel-container-mammalEx {
+    width: 350px;
+    height: 300px;
+    position: relative;
+    top: 44px;
+    right: 40px;
+}
+
+.carouselMammalEx {
+    display: none;
+    color: white;
+}
+
+.carouselMammalExHead {
+    position: relative;
+    font-size: 25px;
+    margin-right: 50px;
+}
+
+.carouselMammalEx img {
+    position: relative;
+    right: 10px;
+}
+
+.carouselMammalExTxt {
+    position: relative;
+    left: -18px;
+    letter-spacing: 1.5px;
+    text-align: center;
+    bottom: 19px;
+}
+
+.prevEx, .nextEx {
+    cursor: pointer;
+    position: absolute;
+    width: auto;
+    padding: 4px;
+    color: white;
+    font-size: 14px;
+    transition: 0.6s ease;
+    border-radius: 0 0 3px 3px;
+    user-select: none;
+    right: 30px;
+    bottom: -3px;
+}
+
+.nextEx {
+    border-radius: 1px 1px 0 0;
+    right: 345px;
+}
+
+
+    .prevEx:hover, .nextEx:hover {
+        background-color: #ffba08;
+    }
+
+.dotsEx {
+    position: relative;
+    width: 5px;
+    bottom: 196px;
+    right: 363px;
+}
+
+.dotEx {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    border-radius: 50%;
+    display: block;
+    margin: 10px;
+    background-color: white;
+    transition: background-color 0.6s ease;
+}
+
+    .activeEx, .dotEx:hover {
+        background-color: #ffba08;
+    }
+
+/*************Endangered Carousel****************/
+.carousel-container-mammalEn {
+    width: 350px;
+    height: 300px;
+    position: relative;
+    right: 600px;
+    bottom: 360px;
+}
+
+.carouselMammalEn {
+    display: none;
+    color: white;
+    bottom: 25px;
+}
+
+    .carouselMammalEn .lutraImgMammal {
+        right: -30px;
+    }
+
+    .carouselMammalEn Img {
+        position: relative;
+        top: 40px;
+        right: 30px;
+    }
+
+
+.carouselMammalEnHead {
+    position: relative;
+    bottom: 325px;
+    right: 600px;
+    font-size: 25px;
+}
+
+.carouselMammalEnTxt {
+    position: relative;
+    text-align: center;
+    top: 10px;
+}
+
+
+.prevEn, .nextEn {
+    cursor: pointer;
+    position: absolute;
+    width: auto;
+    padding: 4px;
+    color: white;
+    font-size: 14px;
+    transition: 0.6s ease;
+    border-radius: 0 0 3px 3px;
+    user-select: none;
+    right: 26px;
+    bottom: -82px;
+}
+
+.nextEn {
+    border-radius: 1px 1px 0 0;
+    right: 308px;
+    bottom: -81px;
+}
+
+
+    .prevEn:hover, .nextEn:hover {
+        background-color: #ffba08;
+    }
+
+.dotsEn {
+    position: relative;
+    width: 5px;
+    bottom: 165px;
+    float: left;
+}
+
+.dotEn {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    border-radius: 50%;
+    display: block;
+    margin: 10px;
+    background-color: white;
+    transition: background-color 0.6s ease;
+}
+
+    .activeEn, .dotEn:hover {
+        background-color: #ffba08;
+    }
+/*********************South Page*********************/
+.southHeadLine {
+    font-size: 40px;
+    position: relative;
+    top: 100px;
+    color: white;
+}
+
+    .southHeadLine:before {
+        content: '//'
+    }
+
+.pageContainerSouth {
+    position: relative;
+    margin-right: 366px;
+    padding-right: 60px;
+    height: 79vh;
+    background: #16120f;
+    color: white;
+    overflow-x: hidden;
+    direction: ltr;
+}
+
+/***********South List***********/
+.southListHead {
+    font-size: 35px;
+}
+
+.southList1 li, .southList2 li, .southList3 li {
+    font-size: 25px;
+    padding: 5px;
+    text-decoration: none;
+}
+
+.southList1 {
+    margin-top: 20px;
+    position: relative;
+    top: 13px;
+    left: 25%;
+}
+
+    .southList1 h3 {
+        color: lightgray;
+        font-size: 30px;
+        text-decoration: underline;
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+
+    .southList1 ul {
+        list-style: none;
+    }
+
+    .southList1 li {
+    }
+
+.southList2 {
+    position: relative;
+    bottom: 534px;
+    bottom: 325px;
+}
+
+    .southList2 h3 {
+        text-decoration: underline;
+        margin-bottom: 10px;
+        font-weight: bold;
+        font-size: 30px;
+        color: lightgray;
+    }
+
+    .southList2 ul {
+        list-style: none;
+    }
+
+
+.southList3 {
+    right: 25%;
+    position: relative;
+    bottom: 696px;
+}
+
+    .southList3 h3 {
+        text-decoration: underline;
+        margin-bottom: 10px;
+        font-weight: bold;
+        font-size: 30px;
+        color: lightgray;
+    }
+
+    .southList3 ul {
+        list-style: none;
+    }
+/**************South Facts*****************/
+.southFacts {
+    list-style: none;
+    position: relative;
+    margin-right: 60px;
+}
+
+    .southFacts li {
+        color: #b2bbc1;
+        font-size: 25px;
+        font-weight: bold;
+        width: 725px;
+    }
+
+
+#southCauses {
+    padding-top: 30px;
+    margin-right: 50px;
+}
+
+#southCauseHeadline {
+    font-size: 25px;
+    margin-right: 60px;
+}
+
+#southCausesList {
+    list-style: none;
+}
+
+#southCauseTxt1, #southCauseTxt2, #southCauseTxt3 {
+    display: none;
+}
+
+.southArrow1, .southArrow2, .southArrow3 {
+    border-color: #16120f transparent;
+    border-style: solid;
+    border-width: 20px 20px 0px 20px;
+    height: 0px;
+    width: 0px;
+    position: relative;
+    top: 105px;
+    right: 21px;
+}
+
+
+.southCause1, .southCause2, .southCause3 {
+    background-repeat: no-repeat;
+    width: 83px;
+    height: 120px;
+    position: relative;
+    border: 2px solid #16120f;
+    border-radius: 15px;
+}
+
+
+    .southCause1 #southCauseTxt1, .southCause2 #southCauseTxt2, .southCause3 #southCauseTxt3 {
+        position: relative;
+        width: 400px;
+        height: 80px;
+        text-align: right;
+        line-height: 25px;
+        margin-top: 50px;
+    }
+
+    .southCause1:hover, .southCause2:hover, .southCause3:hover {
+        border-color: #f43101;
+    }
+
+        .southCause1:hover .southArrow1, .southCause2:hover .southArrow2, .southCause3:hover .southArrow3 {
+            border-color: #f43101 transparent;
+        }
+
+        .southCause1:hover #southCauseTxt1, .southCause2:hover #southCauseTxt2, .southCause3:hover #southCauseTxt3 {
+            display: block;
+        }
+
+.southCause1 {
+    background-image: url(../img/CO2Icon.png);
+    background-size: 90px;
+    background-position: -2px -13px;
+    position: relative;
+    right: 40px;
+    margin-top: 5px;
+}
+
+    .southCause1 p {
+        position: relative;
+        text-align: center;
+        top: 75px;
+    }
+
+.southArrow1 {
+    top: 106px;
+    right: 21px;
+}
+
+#southCauseTxt1 {
+    display: none;
+}
+
+.southCause2 {
+    background-image: url(../img/HuntIcon.png);
+    background-size: 53px;
+    background-position: 15px 11px;
+    position: relative;
+    bottom: 124px;
+    right: 128px;
+}
+
+    .southCause2 p {
+        position: relative;
+        text-align: center;
+        top: 75px;
+    }
+
+.southArrow2 {
+    top: 105px;
+    right: 21px;
+}
+
+#southCauseTxt2 {
+    display: none;
+    position: relative;
+    left: 90px;
+    bottom: 5px;
+}
+
+.southCause3 {
+    background-image: url(../img/CarCrashIcon.png);
+    background-size: 60px;
+    background-position: 12px 5px;
+    position: relative;
+    right: 222px;
+    bottom: 247px;
+}
+
+    .southCause3 p {
+        position: relative;
+        text-align: center;
+        top: 75px;
+    }
+
+.southArrow3 {
+    top: 90px;
+    right: 20px;
+}
+
+#southCauseTxt3 {
+    display: none;
+    position: relative;
+    left: 186px;
+    top: 60px;
+}
+
+.southBG {
+    background-image: url(../img/southPage/southBG.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+/********south carousels*********/
+#southCarouselSection {
+    width: 1000px;
+    position: relative;
+    bottom: 70px;
+    height: 322px;
+}
+/********south carousel 1*********/
+.carousel-container-SouthEx {
+    width: 350px;
+    height: 300px;
+    position: relative;
+    top: 44px;
+    right: 40px;
+}
+
+.carouselSouthEx {
+    display: none;
+    color: white;
+}
+
+.carouselSouthExHead {
+    position: relative;
+    font-size: 25px;
+    margin-right: 50px;
+}
+
+.carouselSouthEx img {
+    position: relative;
+    right: 10px;
+}
+
+.carouselSouthExTxt {
+    position: relative;
+    left: -18px;
+    letter-spacing: 1.5px;
+    text-align: center;
+    bottom: 19px;
+    font-size: 22px;
+}
+
+.prevExS, .nextExS {
+    cursor: pointer;
+    position: absolute;
+    width: auto;
+    padding: 4px;
+    color: white;
+    font-size: 14px;
+    transition: 0.6s ease;
+    border-radius: 0 0 3px 3px;
+    user-select: none;
+    right: 30px;
+    bottom: -3px;
+}
+
+.nextExS {
+    border-radius: 1px 1px 0 0;
+    right: 345px;
+}
+
+
+    .prevExS:hover, .nextExS:hover {
+        background-color: #ffba08;
+    }
+
+.dotsExS {
+    position: relative;
+    width: 5px;
+    bottom: 196px;
+    right: 363px;
+}
+
+.dotExS {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    border-radius: 50%;
+    display: block;
+    margin: 10px;
+    background-color: white;
+    transition: background-color 0.6s ease;
+}
+
+    .activeExS, .dotExS:hover {
+        background-color: #ffba08;
+    }
+/******carousel South 2******/
+.carousel-container-SouthEn {
+    width: 350px;
+    height: 300px;
+    position: relative;
+    right: 600px;
+    bottom: 360px;
+}
+
+.carouselSouthEn {
+    display: none;
+    color: white;
+    bottom: 48px;
+}
+
+.carouselSouthEnHead {
+    position: relative;
+    font-size: 25px;
+    margin-right: 50px;
+    bottom: 395px;
+    right: 475px;
+}
+
+.carouselSouthEn .lutraImgSouth {
+    right: -30px;
+}
+
+.carouselSouthEn Img {
+    position: relative;
+    top: -28px;
+    right: -53px;
+}
+
+
+.carouselSouthlEnHead {
+    position: relative;
+    bottom: 325px;
+    right: 600px;
+    font-size: 25px;
+}
+
+.carouselSouthEnTxt {
+    position: relative;
+    text-align: center;
+    top: -61px;
+    left: 60px;
+    font-size: 22px;
+}
+
+
+.prevEnS, .nextEnS {
+    cursor: pointer;
+    position: absolute;
+    width: auto;
+    padding: 4px;
+    color: white;
+    font-size: 14px;
+    transition: 0.6s ease;
+    border-radius: 0 0 3px 3px;
+    user-select: none;
+    right: -45px;
+    bottom: -15px;
+}
+
+.nextEnS {
+    border-radius: 0 0 1px 1px;
+    right: 258px;
+    top: 290px;
+}
+
+
+    .prevEnS:hover, .nextEnS:hover {
+        background-color: #ffba08;
+    }
+
+.dotsEnS {
+    position: relative;
+    width: 5px;
+    bottom: 165px;
+    float: left;
+    left: 64px;
+    bottom: 240px;
+}
+
+.dotEnS {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    border-radius: 50%;
+    display: block;
+    margin: 10px;
+    background-color: white;
+    transition: background-color 0.6s ease;
+}
+
+    .activeEnS, .dotEnS:hover {
+        background-color: #ffba08;
+    }
+/*********************lutraPage*********************/
+/*start of lutra page*/
+
+#lutraInfo {
+    height: 208px;
+}
+
+#firstLutra {
+    height: 400px;
+    margin-top: 115px;
+    margin-right: 380px;
+}
+
+#ltrList {
+    margin-top: -420px;
+    list-style-image: url(../img/LutraPage/icons/lutraPawbest.png);
+    margin-right: 190px;
+}
+
+.ltrlistings {
+    padding-top: 13px;
+}
+/*Arrows to hover for more info on the lutra*/
+#arrowed1, #arrowed2, #arrowed3, #arrowed4 {
+    display: none;
+    padding-top: 20px;
+    padding-bottom: 157px;
+    margin-top: -210px;
+    margin-right: 80px;
+}
+
+#arrow1img {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    margin-right: 750px;
+    margin-top: 0;
+}
+
+    #arrow1img:hover ~ #arrowed1 {
+        display: block;
+    }
+
+    #arrow1img:hover ~ #ltrList {
+        visibility: hidden;
+    }
+
+#arrow2img {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    margin-right: 540px;
+    margin-top: 40px;
+}
+
+    #arrow2img:hover ~ #arrowed2 {
+        display: block;
+    }
+
+    #arrow2img:hover ~ #ltrList {
+        visibility: hidden;
+    }
+
+#arrow3img {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    margin-right: 595px;
+    margin-top: 260px;
+}
+
+    #arrow3img:hover ~ #arrowed3 {
+        display: block;
+    }
+
+    #arrow3img:hover ~ #ltrList {
+        visibility: hidden;
+    }
+
+
+#arrow4img {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    margin-right: 755px;
+    margin-top: 170px;
+}
+
+    #arrow4img:hover ~ #arrowed4 {
+        display: block;
+    }
+
+    #arrow4img:hover ~ #ltrList {
+        visibility: hidden;
+    }
+
+.lutraSection {
+    margin-right: 50px;
+}
+/*lutra Causes of death*/
+#lutraCauseSec {
+    height: 400px;
+}
+
+#secLutra {
+    height: 450px;
+    margin-top: 150px;
+    margin-right: 360px;
+}
+
+#secLtrHdr {
+    margin-top: -400px;
+    margin-right: 100px;
+    font-size: 22px;
+    font-weight: 100;
+}
+
+.causeLtrArrow1, .causeLtrArrow2, .causeLtrArrow3, .causeLtrArrow4 {
+    border-color: #16120f transparent;
+    border-style: solid;
+    border-width: 20px 20px 0px 20px;
+    height: 0px;
+    width: 0px;
+    position: relative;
+    top: 105px;
+    right: 21px;
+}
+
+.causeLtrArrow4 {
+    top: 89px;
+}
+
+
+.ltrCause1, .ltrCause2, .ltrCause3, .ltrCause4 {
+    background-repeat: no-repeat;
+    width: 83px;
+    height: 120px;
+    position: relative;
+    border: 2px solid #16120f;
+    border-radius: 15px;
+}
+
+
+    .ltrCause1 #ltrCauseTxt1, .ltrCause2 #ltrCauseTxt2, .ltrCause3 #ltrCauseTxt3, .ltrCause4 #ltrCauseTxt4 {
+        position: relative;
+        width: 400px;
+        height: 80px;
+        text-align: right;
+        line-height: 25px;
+        margin-top: 50px;
+    }
+
+    .ltrCause1:hover, .ltrCause2:hover, .ltrCause3:hover, .ltrCause4:hover {
+        border-color: #f43101;
+    }
+
+        .ltrCause1:hover .causeLtrArrow1, .ltrCause2:hover .causeLtrArrow2, .ltrCause3:hover .causeLtrArrow3, .ltrCause4:hover .causeLtrArrow4 {
+            border-color: #f43101 transparent;
+        }
+
+        .ltrCause1:hover #ltrCauseTxt1, .ltrCause2:hover #ltrCauseTxt2, .ltrCause3:hover #ltrCauseTxt3, .ltrCause4:hover #ltrCauseTxt4 {
+            display: block;
+        }
+
+.ltrCause1 {
+    background-image: url(../img/CO2Icon.png);
+    background-size: 115px;
+    background-position: -15px -13px;
+    position: relative;
+    margin-right: 40px;
+    margin-top: 5px;
+    top: 14px;
+    right: 8px;
+}
+
+    .ltrCause1 p {
+        position: relative;
+        text-align: center;
+        top: 84px;
+    }
+
+#ltrCauseTxt1 {
+    display: none;
+}
+
+.ltrCause2 {
+    background-image: url(../img/H2O-PollutionIcon.png);
+    background-size: 110px;
+    background-position: -10px -4px;
+    margin-right: 40px;
+    right: 95px;
+    bottom: 110px;
+}
+
+    .ltrCause2 p {
+        position: relative;
+        text-align: center;
+        top: 85px;
+    }
+
+#ltrCauseTxt2 {
+    left: 94px;
+    display: none;
+}
+
+.ltrCause3 {
+    background-image: url(../img/noFood.png);
+    background-size: 60px;
+    background-position: 8px 15px;
+    position: relative;
+    margin-right: 40px;
+    bottom: 234px;
+    right: 181px;
+}
+
+    .ltrCause3 p {
+        position: relative;
+        text-align: center;
+        top: 85px;
+    }
+
+#ltrCauseTxt3 {
+    display: none;
+    left: 180px;
+}
+
+.ltrCause4 {
+    background-image: url(../img/CarCrashIcon.png);
+    background-size: 70px;
+    background-position: 6px 7px;
+    margin-right: 40px;
+    bottom: 358px;
+    right: 267px;
+}
+
+    .ltrCause4 p {
+        position: relative;
+        text-align: center;
+        top: 83px;
+    }
+
+#ltrCauseTxt4 {
+    display: none;
+    left: 275px;
+    top: 70px;
+}
+
+
+#thirdLutra {
+    margin-right: 220px;
+    margin-top: 85px;
+    font-size: 22px;
+    font-weight: 100;
+}
+
+#babyLtrVidImg {
+    position: absolute;
+    margin-right: 570px;
+    margin-top: -370px;
+}
+
+#thirdLtrHdr {
+    margin-top: -400px;
+    margin-right: 85px;
+    font-size: 22px;
+    font-weight: 100;
+}
+
+#demographDataList {
+    list-style-image: url(../img/LutraPage/icons/lutraPawbest.png);
+}
+
+#fourthLutra {
+    margin-top: 125px;
+    margin-right: 160px;
+}
+
+#fourthLtrHdr {
+    margin-top: -400px;
+    margin-right: 60px;
+    font-size: 22px;
+    font-weight: 100;
+}
+
+#matureLtrList {
+    list-style-image: url(../img/LutraPage/icons/lutraPawbest.png);
+}
+
+#saveLutraSection {
+    margin-right: 50px;
+}
+
+    #saveLutraSection p {
+        width: 307px;
+    }
+
+#fifthLtrHdr {
+    font-size: 22px;
+    font-weight: 100;
+    margin-right: 30px;
+    padding-bottom: 20px;
+    margin-top: -540px;
+}
+
+.ltrSubTitles {
+    padding-bottom: 15px;
+    margin-right: 30px;
+    padding-top: 30px;
+    font-size: 18px;
+}
+
+#lutraDrinking {
+    height: 600px;
+    width: 800px;
+    margin-right: 160px;
+    margin-top: 125px;
+    background-image: url(../img/LutraPage/waterdrink4.png);
+    background-repeat: no-repeat;
+}
+
+/*********lutra Carousel***********/
+.carouselLtrHead {
+    position: relative;
+    top: 50px;
+    right: 31px;
+    font-size: 20px;
+}
+
+.carousel-container-carouselLtr {
+    width: 350px;
+    height: 50px;
+    position: relative;
+    top: 168px;
+    margin-bottom: 175px;
+}
+
+.carouselLtr {
+    display: none;
+    color: white;
+    bottom: 56px;
+}
+
+
+.carouselLtrTxt {
+    position: relative;
+    right: 30px;
+    bottom: 95px;
+    width: 300px;
+    height: 62px;
+    color: white;
+}
+
+
+.prevLtr, .nextLtr {
+    cursor: pointer;
+    position: absolute;
+    width: auto;
+    padding: 4px;
+    color: white;
+    font-size: 14px;
+    transition: 0.6s ease;
+    border-radius: 3px;
+    user-select: none;
+    right: 174px;
+    bottom: 40px;
+}
+
+.nextLtr {
+    right: 218px;
+}
+
+
+    .prevLtr:hover, .nextLtr:hover {
+        background-color: #ffba08;
+    }
+
+.dotsLtr {
+    position: relative;
+    width: 5px;
+    bottom: 165px;
+    float: left;
+}
+
+.dotLtr {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    border-radius: 50%;
+    display: block;
+    margin: 10px;
+    background-color: white;
+    transition: background-color 0.6s ease;
+}
+
+    .activeLtr, .dotLtr:hover {
+        background-color: #ffba08;
+    }
+
+/********lutra page-more animals that need help********/
+#lutraMoreAnimals {
+    height: 500px;
+}
+
+#needHelpLutra1 {
+    width: 400px;
+    height: 400px;
+    font-size: 22px;
+    text-decoration: none;
+    color: white;
+    position: relative;
+    left: 120px;
+    bottom: 68px;
+}
+
+    #needHelpLutra1 img {
+        position: relative;
+        right: 160px;
+        top: 57px;
+    }
+
+    #needHelpLutra1:hover, #needHelpLutra2:hover, #needHelpLutra3:hover {
+        color: #ffba08;
+        text-decoration: underline;
+    }
+
+
+
+
+#needHelpLutra2 {
+    width: 400px;
+    height: 400px;
+    position: relative;
+    bottom: 20px;
+    font-size: 22px;
+    text-decoration: none;
+    color: white;
+    left: 235px;
+    bottom: 68px;
+}
+
+
+    #needHelpLutra2 img {
+        right: 195px;
+        position: relative;
+        top: 55px;
+    }
+
+#needHelpLutra3 {
+    text-decoration: none;
+    width: 400px;
+    height: 400px;
+    position: relative;
+    right: 300px;
+    bottom: 320px;
+    font-size: 22px;
+    color: white;
+}
+
+    #needHelpLutra3 img {
+        right: 212px;
+        position: relative;
+    }
+/**************Extinct sticker slide in***************/
+.slide-in-bck-tr {
+    -webkit-animation: slide-in-bck-tr 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-in-bck-tr 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2019-7-1 16:0:34
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation slide-in-bck-tr
+ * ----------------------------------------
+ */
+@-webkit-keyframes slide-in-bck-tr {
+    0% {
+        -webkit-transform: translateZ(700px) translateY(-300px) translateX(400px);
+        transform: translateZ(700px) translateY(-300px) translateX(400px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: translateZ(0) translateY(0) translateX(0);
+        transform: translateZ(0) translateY(0) translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-in-bck-tr {
+    0% {
+        -webkit-transform: translateZ(700px) translateY(-300px) translateX(400px);
+        transform: translateZ(700px) translateY(-300px) translateX(400px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: translateZ(0) translateY(0) translateX(0);
+        transform: translateZ(0) translateY(0) translateX(0);
+        opacity: 1;
+    }
+}
+
+/*********Volenteer Button activate*********/
+.volHeadline {
+    font-size: 40px;
+    position: relative;
+    top: 100px;
+    right: 3px;
+    color: white;
+}
+
+    .volHeadline:before {
+        content: '//';
+    }
+
+#volTopTxt {
+    margin-bottom: 60px;
+}
+
+.volTxt {
+    position: relative;
+    font-size: 22px;
+    letter-spacing: 1.5px;
+    right: 85px;
+    color: #b2bbc1;
+    margin-top: 50px;
+}
+
+.volTxtEnlrg {
+    font-size: 28px;
+}
+
+
+/*Clickable Icons In Volenteering page*/
+.hospitalClick {
+    display: none;
+    position: absolute;
+    font-size: 22px;
+    margin-right: 88px;
+}
+
+    .hospitalClick ul {
+        list-style: none;
+    }
+
+    .hospitalClick li {
+        width: 250px;
+    }
+
+.ministryClick {
+    display: none;
+    font-size: 22px;
+    margin-right: 88px;
+    position: absolute;
+}
+
+    .ministryClick ul {
+        list-style: none;
+    }
+
+    .ministryClick li {
+        width: 250px;
+    }
+/*toggles red border after click*/
+.selectedVolenteeringPlace {
+    border: 2px solid red;
+    border-radius: 15px;
+}
+
+/*Inside Animal hospital Click*/
+.animalHospitalHead {
+    position: relative;
+    margin-bottom: 35px;
+    right: 25px;
+}
+
+.animalHospitalImg {
+    position: relative;
+    right: 160px;
+    padding: 2px;
+}
+
+.animalHospitalHeadPlace {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.ahList1 {
+    position: relative;
+}
+
+.ahList2 {
+    position: relative;
+    bottom: 216px;
+    right: 336px;
+}
+
+.ahList3 {
+    position: relative;
+    bottom: 346px;
+    right: 660px;
+}
+
+
+.ministryNatureImg {
+    position: relative;
+    right: 349px;
+    padding: 2px;
+    bottom: 5px;
+}
+
+
+.ministryNatureHead {
+    position: relative;
+    margin-bottom: 35px;
+    right: 360px;
+}
+
+.ministryNatureHeadPlace {
+    font-weight: bold;
+}
+
+    .ministryNatureHeadPlace:visited, .animalHospitalHeadPlace:visited {
+        color: white;
+    }
+
+.mnList1 {
+    position: relative;
+}
+
+.mnList2 {
+    position: relative;
+    bottom: 132px;
+    right: 295px;
+}
+
+.mnList3 {
+    position: relative;
+    bottom: 308px;
+    right: 600px;
+}
+
+.mnList4 {
+    position: relative;
+    bottom: 206px;
+}
+
+.mnList5 {
+    position: relative;
+    bottom: 338px;
+    right: 295px;
+}
+
+/*Vibration of button*/
+.heartbeat {
+    -webkit-animation: heartbeat 4s ease-in-out infinite both;
+    animation: heartbeat 4s ease-in-out infinite both;
+}
+/* ----------------------------------------------
+ * Generated by Animista on 2019-7-5 17:31:28
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation heartbeat
+ * ----------------------------------------
+ */
+@-webkit-keyframes heartbeat {
+    from {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transform-origin: center center;
+        transform-origin: center center;
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+
+    10% {
+        -webkit-transform: scale(0.91);
+        transform: scale(0.91);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+
+    17% {
+        -webkit-transform: scale(0.98);
+        transform: scale(0.98);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+
+    33% {
+        -webkit-transform: scale(0.87);
+        transform: scale(0.87);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+
+    45% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+}
+
+@keyframes heartbeat {
+    from {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transform-origin: center center;
+        transform-origin: center center;
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+
+    10% {
+        -webkit-transform: scale(0.91);
+        transform: scale(0.91);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+
+    17% {
+        -webkit-transform: scale(0.98);
+        transform: scale(0.98);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+
+    33% {
+        -webkit-transform: scale(0.87);
+        transform: scale(0.87);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+
+    45% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+}
+
+
+/******************about Page*****************/
+.aboutHeadLine {
+    font-size: 40px;
+    position: relative;
+    top: 100px;
+    color: white;
+}
+
+    .aboutHeadLine:before {
+        content: '//';
+    }
+
+.aboutTxt {
+    width: 596PX;
+    margin-right: 50PX;
+    color: #b2bbc1;
+}
+
+    .aboutTxt p {
+        margin-top: 16px;
+        FONT-SIZE: 26PX;
+    }
+
+.aboutOur {
+    margin-top: 140px;
+    margin-right: 50px;
+    font-size: 16px;
+}
+
+/********************Contact Page************************/
+.contactHeadLine {
+    font-size: 40px;
+    position: relative;
+    top: 100px;
+    color: white;
+}
+
+    .contactHeadLine:before {
+        content: '//';
+    }
+
+.contactTxt {
+    margin-right: 50px;
+}
+
+    .contactTxt h2, .contactTxt h2:before {
+        color: #b2bbc1;
+        FONT-SIZE: 26PX;
+    }
+
+    .contactTxt h2 {
+        margin-top: 20px;
+    }
+
+        .contactTxt h2:before {
+            content: '//';
+        }
+
+    .contactTxt a, .contactTxt p {
+        color: white;
+        FONT-SIZE: 26PX;
+    }
+
+#contactForm {
+    margin-top: 100px;
+    font-size: 26px;
+    margin-right: 50px;
+}
+
+    #contactForm label, #contactForm input {
+        display: block;
+        margin-top: 15px;
+    }
+
+input:invalid {
+    box-shadow: 0 0 5px 1px red;
+}
+
+input:focus:invalid {
+    box-shadow: none;
+}
+
+
+/********webMapSection*******/
+#webMapSection {
+    margin-right: 50px;
+}
+
+    #webMapSection h2 {
+        color: #b2bbc1;
+    }
+
+        #webMapSection h2:before {
+            content: '//';
+        }
+
+    #webMapSection ul {
+        list-style: none;
+        position: relative;
+        top: 30px;
+    }
+
+    #webMapSection li {
+        font-size: 14px;
+        padding: 3px;
+        position: relative;
+        right: 15px;
+    }
+
+.mapClass {
+    position: relative;
+}
+
+.mapArea {
+    position: relative;
+    right: 206px;
+    bottom: 110px;
+}
+
+.mapVolunteer {
+    position: relative;
+    right: 400px;
+    bottom: 181px;
+}
+/**********Time Line*************/
+iframe {
+    width: 100%;
+    height: 90%;
+    position: absolute;
+    display: block;
+}
+/*************rights at bottom***************/
+.rightsArea {
+    border-top: 3px solid white;
+    width: 1000px;
+    height: 300px;
+}
+
+    .rightsArea a {
+        color: white;
+    }
